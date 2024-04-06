@@ -58,8 +58,8 @@ df['longitude'] = df['crim'].apply(lambda x: -71.0589 - x/100)
 # Sidebar filters
 with st.sidebar:
     # Sidebar widgets - make sure these are indented
-    rm_slider = st.slider("Average Number of Rooms", float(df["rm"].min()), float(df["rm"].max()))
-    crim_slider = st.slider("Per Capita Crime Rate", float(df["crim"].min()), float(df["crim"].max()))
+    rm_slider = st.slider("🚪 Average Number of Rooms", float(df["rm"].min()), float(df["rm"].max()))
+    crim_slider = st.slider("🚨 Per Capita Crime Rate", float(df["crim"].min()), float(df["crim"].max()))
     chas_filter = st.selectbox("Charles River Dummy Variable (1 if tract bounds river; 0 otherwise)", df["chas"].unique(), index=None)
 
 # Data filtering
